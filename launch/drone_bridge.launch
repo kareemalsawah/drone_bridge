@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	
+	
+	<node name="drone_mover" pkg="drone_bridge" type="drone_mover.py" output="screen"/>
+	<node name="odometry_publisher" pkg="drone_bridge" type="odometry_publisher.py" output="screen"/>
+	<node name="keyboard_control" pkg="drone_bridge" type="keyboard_control.py" output="screen"/>
+	<node name="camera_publisher" pkg="drone_bridge" type="camera_publisher.py" output="screen"/>
+	<node name="imu_publisher" pkg="drone_bridge" type="imu_publisher.py" output="screen"/>
+	<!--<node name="cheating_SLAM" pkg="drone_bridge" type="cheating_SLAM.py" output="screen"/>-->
+</launch>
